@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Padaria Daros</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="./images/daros-sf.png" alt="logo" class="logo-box-img">
+        </div>
+
+        <button class="hidden-menu-btn"></button>
+
+        <div class="backdrop"></div>
+
+        <div class="hidden-menu">
+
+            <nav>
+                <a href="#" class="hidden-links" style="animation-delay: 0.2s;">Home</a>
+                <a href="#trd-section" class="hidden-links" style="animation-delay: 0.3s;">Padaria</a>
+                <a href="#frt-section" class="hidden-links" style="animation-delay: 0.4s;">Confeitaria</a>
+                <a href="#footer" class="hidden-links" style="animation-delay: 0.5s;">Contatos</a>
+            </nav>
+        </div>
+
+        <div class="menu-bar">
+            <a href="">Home</a>
+            <a href="#trd-section">Padaria</a>
+            <a href="#frt-section">Confeitaria</a>
+            <a href="#footer">Contatos</a>
+        </div>
+    </header>
+
+    <section class="fst-container">
+        <div class="fst-container-left">
+            <h1>Padaria Daros</h1>
+            <h2>desde 1992, porduzindo o sabor para um dia melhor.</h2>
+            <button class="see-more">Ver Produtos</button>
+        </div>
+
+        <div class="fst-container-right">
+            <img src="./images/bread-png.png" alt="bread-icon">
+        </div>
+    </section>
+
+    <section class="scd-container" id="fst-link-btn">
+        <p class="title-scd-container">Produtos Destaque</p>
+
+        <div class="hot-sale-products">
+            <div id="hot-products">
+                <img src="./images/cucas.jpeg" alt="">
+                <h1>Cucas</h1>
+                <p class="hsp-main-text">Nossas cucas recheadas sao o toque especial de uma receita tradicional
+                    Italiana, deliciosas de qualquer forma! </p>
+            </div>
+
+            <div id="hot-products">
+                <img src="./images/paes.jpg" alt="">
+                <h1>paes</h1>
+                <p class="hsp-main-text">Quem nao gosta de um paozinho, afinal nao tem como nao gostar, com diversos
+                    tipos de paes, seu cafe da manha fica mais saboroso!</p>
+            </div>
+
+            <div id="hot-products">
+                <img src="./images/tortas.jpg" alt="">
+                <h1>Tortas</h1>
+                <p class="hsp-main-text">Nossas maravilhosas tortas sao o que nao pode faltar em um almoco, ou data
+                    comemorativa, conte conosco para adocar sua vida!</p>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item active paoDiBatata">
+                    <img id="carousel-images-opacity" src="./images/paes.jpg" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-images-opacity" src="./images/coxinhas.jpg" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img id="carousel-images-opacity" src="./images/cucas.jpeg" alt="Imagem 3">
+                </div>
+            </div>
+            <a class="carousel-prev" href="#">Anterior</a>
+            <a class="carousel-next" href="#">Próximo</a>
+        </div>
+
+
+    </section>
+
+    <section class="trd-container" id="trd-section">
+        <h1 class="title-trd-container">Padaria</h1>
+        <div class="trd-cont-products">
+            <a id="trd-cont-products-box" href="./paes/paes.html">
+                <img src="./images/paes.jpg" alt="bread-image">
+                <h1>Paes</h1>
+            </a>
+            <a id="trd-cont-products-box" href="./snacks/snacks.html">
+                <img src="./images/coxinhas.jpg" alt="">
+                <h1>Salgados</h1>
+            </a>
+        </div>
+    </section>
+
+    <section class="frt-container" id="frt-section">
+        <h1 class="title-frt-container">Confeitaria</h1>
+        <div class="frt-cont-products">
+            <a id="frt-cont-products-box" href="./cakes/cakes.html">
+                <img src="./cakes-img/torta.jpg" alt="">
+                <h1>Tortas</h1>
+            </a>
+            <a id="frt-cont-products-box" href="./cakes2/cakes2.html">
+                <img src="./cakes-img/bolo.jpeg" alt="">
+                <h1>Bolos</h1>
+            </a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <a class="footer-one" href="#">
+            <img src="./images/daros-sf.png" alt="prime-logo">
+        </a>
+
+        <div class="footer-two" id="footer">
+            <a href="https://www.instagram.com/padariadaros/"><img src="./icons/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/PADARIADAROS/?locale=pt_BR"><img src="./icons/facebook.png" alt=""></a>
+            <a href=""><img src="./icons/whatsapp.png" alt=""></a>
+        </div>
+
+        <div class="footer-three" id="footer">
+            <a href="https://goo.gl/maps/N2GPNHNMDuJNq7yS7">Onde nos encontar?</a>
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+</html>

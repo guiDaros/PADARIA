@@ -1,0 +1,116 @@
+@keyframes temporizer {
+    from {
+        color: #000000;
+    }
+
+    to {
+        color: #488b6ad5;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fcf0dac1;
+}
+
+/*head menu*/
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    gap: 10rem;
+    color: #002211d5;
+    font-size: 22px;
+    background-color: #f2e1bbda;
+    height: 100px;
+    z-index: 1;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+/*body*/
+
+.menu{
+    position: relative;
+    top: 200px;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#product-box{
+    background-color: #fbe2ae;
+    width: 400px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 4px 2px 1px #0000002d;
+}
+
+#product-box img{
+    max-width: 350px;
+    max-height: 450px;
+    height: 550px;
+    position: relative;
+    top: -10px;
+    box-shadow: 6px 4px 2px 1px #0000002d;
+}
+
+#main-text{
+    display: none;
+}
+
+#product-box h1{
+   color: #002211d5; 
+   position: relative;
+   bottom: -12px;
+}
+
+/*hover efect*/
+
+#product-box:hover{
+    transition: 0.4s;
+    height: 570px;
+    width: 410px;
+}
+
+#product-box:hover img{
+    display: none;
+}
+
+#product-box:hover p{
+    height: 300px;
+    width: 300px;
+    font-size: 23px;
+    display: flex;
+    text-align: center;
+    border: 1px solid #795e4cd1;
+}
+
+#product-box:hover h1{
+    position: relative;
+    bottom: -90px;
+}
