@@ -114,3 +114,27 @@ header img{
     position: relative;
     bottom: -90px;
 }
+
+/*responsivity*/
+
+@media only screen and (max-width: 400px){
+
+    #product-box{
+        height: 400px;
+        width: 300px;
+    }
+
+    #product-box h1{
+        color: #002211d5; 
+        position: relative;
+        bottom: 7px;
+     }
+
+    #product-box:hover img{
+        height: 350px;
+        width: 280px;
+        max-width: 280px;
+        max-height: 350px;
+    }
+}
+

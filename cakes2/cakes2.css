@@ -8,18 +8,18 @@
     }
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #fcf0dac1;
 }
 
@@ -40,26 +40,26 @@ header {
     z-index: 1;
 }
 
-header img{
+header img {
     width: 100px;
     height: 100px;
 }
 
 /*body*/
 
-.menu{
+.menu {
     position: relative;
     top: 200px;
     width: 100vw;
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
 }
 
-#product-box{
+#product-box {
     background-color: #fbe2ae;
     width: 400px;
     height: 550px;
@@ -70,7 +70,7 @@ header img{
     box-shadow: 6px 4px 2px 1px #0000002d;
 }
 
-#product-box img{
+#product-box img {
     max-width: 350px;
     max-height: 450px;
     height: 550px;
@@ -79,29 +79,29 @@ header img{
     box-shadow: 6px 4px 2px 1px #0000002d;
 }
 
-#main-text{
+#main-text {
     display: none;
 }
 
-#product-box h1{
-   color: #002211d5; 
-   position: relative;
-   bottom: -12px;
+#product-box h1 {
+    color: #002211d5;
+    position: relative;
+    bottom: -12px;
 }
 
 /*hover efect*/
 
-#product-box:hover{
+#product-box:hover {
     transition: 0.4s;
     height: 570px;
     width: 410px;
 }
 
-#product-box:hover img{
+#product-box:hover img {
     display: none;
 }
 
-#product-box:hover p{
+#product-box:hover p {
     height: 300px;
     width: 300px;
     font-size: 23px;
@@ -110,7 +110,32 @@ header img{
     border: 1px solid #795e4cd1;
 }
 
-#product-box:hover h1{
+#product-box:hover h1 {
     position: relative;
     bottom: -90px;
+}
+
+
+/*responsivity*/
+
+
+@media only screen and (max-width: 400px) {
+
+    #product-box {
+        height: 400px;
+        width: 300px;
+    }
+
+    #product-box h1 {
+        color: #002211d5;
+        position: relative;
+        bottom: 7px;
+    }
+
+    #product-box img {
+        height: 350px;
+        width: 280px;
+        max-width: 280px;
+        max-height: 350px;
+    }
 }
