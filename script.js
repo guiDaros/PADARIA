@@ -1,32 +1,35 @@
 const header = document.querySelector('header')
-const scrollPosition = this.scrollY;
 const button = document.querySelector('.see-more')
+let prevScrollPos = window.scrollY
 
-/*const func = () =>{
-    header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
-}
-*/
+/*window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const logoBox = document.querySelector('.logo-box')
 
-/*const func2 = () =>{
-    if(scrollPosition < 1){
-        header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    if(scrollPosition > 0){
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.269)'
     }else{
-        header.style.backgroundColor = '#f3e5c6';
+        header.style.backgroundColor = 'transparent'
     }
-}*/
+})*/
 
-const funct = () => {
-    if (scrollPosition !== 0) {
-        header.style.backgroundColor = 'rgba(243, 229, 198)';
+/*scroll position*/
+
+window.addEventListener("scroll", function () {
+    const currentScrollPos = window.scrollY;
+    const headerHeight = header.offsetHeight
+
+    if (prevScrollPos > currentScrollPos) {
+        header.style.marginTop = 0
+    } else {
+        header.style.marginTop = `-${headerHeight}px`
     }
 
-    document.addEventListener('scroll', funct)
-}
+    console.log(headerHeight)
+    prevScrollPos = currentScrollPos;
+});
 
-
-
-
-/*hidden manu config*/
+/*hiden menu*/
 
 const menuBtn = document.querySelector('.hidden-menu-btn');
 

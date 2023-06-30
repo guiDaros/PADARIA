@@ -21,7 +21,7 @@ HTML {
 }
 
 body {
-    background-color: #fcf0dac1;
+    background-color: #fcf0da;
 }
 
 /*responsive header*/
@@ -40,6 +40,9 @@ header {
     display: flex;
     top: 0;
     position: fixed;
+    z-index: 999;
+    transition: margin-top 0.3s ease;
+    background-color: inherit;
 }
 
 .logo-box {
@@ -48,6 +51,7 @@ header {
     background-color: #fbe2ae;
     margin-left: 30px;
     border-bottom-left-radius: 40px;
+    transition: margin-top 0.3s ease;
 }
 
 .logo-box-img {
@@ -293,7 +297,7 @@ header {
     text-decoration: underline;
 }
 
-.carousel-bakery{
+.carousel-bakery {
     display: none;
 }
 
@@ -653,12 +657,10 @@ footer {
 
 
     .trd-container,
-    .frt-container {
-        
-    }
+    .frt-container {}
 
     .title-trd-container,
-    .title-frt-container{
+    .title-frt-container {
         margin: 0;
         font-size: 40px;
         text-decoration: none;
